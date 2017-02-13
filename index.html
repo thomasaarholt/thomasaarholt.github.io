@@ -1,0 +1,204 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>HyperSpy: multi-dimensional data analysis toolbox &#8212; HyperSpy</title>
+    
+    <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/hyperspy_logo.ico"/>
+  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="HyperSpy 1.1.2 has been released!" href="news/release_1.1.2.html" />
+  <link rel="alternate"
+        type="application/rss+xml"
+        title="Hyperspy News"
+        href="/news.rss" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25260850-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'hyperspy/hyperspy'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+  </head>
+  <body role="document">
+    <div class="header-wrapper">
+      <div class="header">
+          <div class="logo"><a href="#">
+            <img class="logo" src="_static/hyperspy_banner.png" alt="Logo"/>
+          </a></div>
+       
+        <div class="rel">
+          <a href="#">Home</a> ·
+<a href="download.html">Download</a> ·
+<a href="documentation.html">Documentation</a> ·
+<a href="http://nbviewer.ipython.org/github/hyperspy/hyperspy-demos/tree/master/">Demos</a> ·
+<a href="news.html">News</a> ·
+<a href="support.html">Support</a> ·
+<a href="http://hyperspy.org/hyperspy-doc/current/citing.html">Citing</a> ·
+<a href="https://github.com/hyperspy/hyperspy/graphs/contributors">Credits</a>
+        </div>
+       </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+             
+            
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"> 
+<div class="sidebarblock">
+<h3>Versions</h3>
+
+<div class="tile"><h4>Stable</h4>
+    1.1.2<br/>
+    <a href="http://hyperspy.org/download.html#beta-releases">Download</a><br/>
+    <a href="https://github.com/hyperspy/hyperspy/issues?utf8=%E2%9C%93&q=label%3ARELEASE_next_patch+">Known issues</a>
+
+</div>
+
+<div class="tile"><h4>Development</h4>
+    <a href="https://github.com/hyperspy/hyperspy">Github</a>
+</div>
+</div>
+<div class="sidebarblock">
+<h3>Support</h3>
+
+  <ul class="simple">
+    <li><a class="reference external" href="https://github.com/hyperspy/hyperspy/issues">
+            Issue tracker</a></li>
+    <li><a class="reference external" href="http://groups.google.com/group/hyperspy-users">
+            Mailing list</a></li>
+  </ul>
+</div>
+        </div>
+      </div>
+        
+        <div class="document">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="hyperspy-multi-dimensional-data-analysis-toolbox">
+<h1>HyperSpy: multi-dimensional data analysis toolbox<a class="headerlink" href="#hyperspy-multi-dimensional-data-analysis-toolbox" title="Permalink to this headline">¶</a></h1>
+<p>HyperSpy is an open source Python library which provides tools to facilitate
+the interactive data analysis of multi-dimensional datasets that can be
+described as multi-dimensional arrays of a given signal (e.g. a 2D array of
+spectra a.k.a spectrum image).</p>
+<p>HyperSpy aims at making it easy and natural to apply analytical procedures that
+operate on an individual signal to multi-dimensional arrays, as well as
+providing easy access to analytical tools that exploit the multi-dimensionality
+of the dataset.</p>
+<p>Its modular structure makes it easy to add features to analyze different kinds
+of signals.</p>
+<div class="section" id="highlights">
+<h2>Highlights<a class="headerlink" href="#highlights" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Two families of named and scaled axes: <em>signal</em> and <em>navigation</em>.</li>
+<li>Visualization tools for multi-dimensional spectra and images.</li>
+<li>Easy access multi-dimensional curve fitting and blind source separation.</li>
+<li>Built on top of NumPy, SciPy, matplotlib and scikit-learn.</li>
+<li>Modular design for easy extensibility.</li>
+</ul>
+<p>The development has been motivated by the data analysis needs of the
+electron microscopy community but it is proving useful in many other fields.</p>
+</div>
+<div class="section" id="news">
+<h2>News<a class="headerlink" href="#news" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="hyperspy-1-1-2-has-been-released">
+<h3><a class="feed-ref reference internal" href="news/release_1.1.2.html#hyperspy-1-1-2-has-been-released">HyperSpy 1.1.2  has been released!</a><a class="headerlink" href="#hyperspy-1-1-2-has-been-released" title="Permalink to this headline">¶</a></h3>
+<p class="feed-meta">Published on <em class="feed-date">2016-01-12 00:00:00</em></p>
+<p>We are pleased to announce the release of HyperSpy 1.1.2</p>
+<p>This is a maintenance release. Follow the following links for details on all
+the <a class="reference external" href="https://github.com/hyperspy/hyperspy/issues?q=label%3Abug+is%3Aclosed+milestone%3Av1.1.2">bugs fixed</a>
+and <a class="reference external" href="https://github.com/hyperspy/hyperspy/issues?q=is%3Aclosed+milestone%3Av1.1.2+label%3Aenhancement">enhancements</a>.</p>
+</div>
+<div class="section" id="hyperspy-1-1-has-been-released">
+<h3><a class="feed-ref reference internal" href="news/release_1.1.html#hyperspy-1-1-has-been-released">HyperSpy 1.1  has been released!</a><a class="headerlink" href="#hyperspy-1-1-has-been-released" title="Permalink to this headline">¶</a></h3>
+<p class="feed-meta">Published on <em class="feed-date">2016-08-03 00:00:00</em></p>
+<p>We are pleased to announce the release of HyperSpy 1.1</p>
+<p><a class="feed-more reference internal" href="news/release_1.1.html#hyperspy-1-1-has-been-released">Read more…</a></p>
+</div>
+<div class="section" id="hyperspy-1-0-1-has-been-released">
+<h3><a class="feed-ref reference internal" href="news/release_1.0.1.html#hyperspy-1-0-1-has-been-released">HyperSpy 1.0.1  has been released!</a><a class="headerlink" href="#hyperspy-1-0-1-has-been-released" title="Permalink to this headline">¶</a></h3>
+<p class="feed-meta">Published on <em class="feed-date">2016-07-27 00:00:00</em></p>
+<p>We are pleased to announce the release of HyperSpy 1.0.1</p>
+<p><a class="feed-more reference internal" href="news/release_1.0.1.html#hyperspy-1-0-1-has-been-released">Read more…</a></p>
+</div>
+<div class="section" id="scipy2016-hyperspy-talk">
+<h3><a class="feed-ref reference internal" href="news/scipy2016_talk.html#scipy2016-hyperspy-talk">Scipy2016 HyperSpy talk</a><a class="headerlink" href="#scipy2016-hyperspy-talk" title="Permalink to this headline">¶</a></h3>
+<p class="feed-meta">Published on <em class="feed-date">2016-07-15 00:00:00</em></p>
+<p>Watch online Tomas Ostaševičius presenting &#8220;HyperSpy: How to Easily Bend Multi-dimensional Data to your Analytical Will&#8221; at the <a class="reference external" href="http://scipy2016.scipy.org">SciPy2016 conference</a>.</p>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/kVlf3bMZcsc" frameborder="0" allowfullscreen></iframe></div>
+</div>
+<div class="section" id="endorsements">
+<h2>Endorsements<a class="headerlink" href="#endorsements" title="Permalink to this headline">¶</a></h2>
+<p>Here is some of what our users say about Hyperspy:</p>
+<blockquote class="epigraph">
+<div><p>Hyperspy made it easy to process EELS and EDS data for presentation in my thesis!</p>
+<p class="attribution">&mdash;Tom Aarholt, University of Oxford</p>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="clearer"></div>
+    </div>
+    </div>
+
+<a href="https://github.com/hyperspy/hyperspy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <div class="footer-wrapper">
+      
+    <div class="footer" role="contentinfo">
+        &#169; Copyright The HyperSpy development team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.2.
+    </div>
+    </div>
+
+  </body>
+</html>
