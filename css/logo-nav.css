@@ -206,9 +206,9 @@ body {
 
 /* Orange action button */
 .orange-button {
-    background-color: #E46E2E;
+    background-color: #2660A4;
     border-radius: 5.82px;
-    box-shadow: 0 3px #863001;
+    box-shadow: 0 3px #98C1D9;
     color: white;
     display: inline-block;
     font-size: 16px;
@@ -218,12 +218,12 @@ body {
 
 }
 .orange-button:hover {
-    background-color: #F27624;
+    background-color: #98C1D9;
     color: white;
     text-decoration: none;
 }
 .orange-button:active, .orange-button:focus {
-    background-color: #DC601C;
+    background-color: #E0FBFC;
     color: white;
     text-decoration: none;
 }
