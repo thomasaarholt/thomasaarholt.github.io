@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hyperspy | Widgets</title>
+    <meta property="og:title" content="Project Jupyter" />
+    <meta property="og:description" content="HyperSpy is an open source Python library which provides tools to facilitate the interactive data analysis of multi-dimensional datasets that can be described as multi-dimensional arrays of a given signal (e.g. a 2D array of spectra a.k.a spectrum image).
+" />
+    <meta name="description" content="HyperSpy is an open source Python library which provides tools to facilitate the interactive data analysis of multi-dimensional datasets that can be described as multi-dimensional arrays of a given signal (e.g. a 2D array of spectra a.k.a spectrum image).
+">
+    <meta property="og:url" content="http://www.jupyter.org" />
+    <meta property="og:image" content="http://jupyter.org/assets/homepage.png" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/logo-nav.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link href="/assets/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/assets/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="/assets/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="/assets/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="/assets/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/assets/icon-hires.png" rel="icon" sizes="192x192" />
+    <link href="/assets/icon-normal.png" rel="icon" sizes="128x128" />
+    <link rel="canonical" href="http://localhost:4000/widgets.html">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="//use.typekit.net/kpd5yrh.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-52617120-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script>console.log('Welcome to Project Jupyter! Explore the various tools available and their corresponding documentation. If you are interested in contributing to the platform, please visit the community resources section at http://jupyter.org/community.html.')</script>
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top navbar-gray " role="navigation" id="navbar" >
+        <div class="navbar-inner">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar "></span>
+                    <span class="icon-bar "></span>
+                    <span class="icon-bar "></span>
+                </button>
+                <a class="navbar-brand" href="/index.html">
+                    <img id="jupyter-nav-logo" class="navbar-logo" src="/assets/nav_logo.png" alt="Jupyter logo">
+                </a>
+            </div>
+            <div class="blur"></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right ">
+                    
+                      
+                        
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                              
+                               <li>
+                                   <a href="/install.html" class="tab">Install</a>
+                               </li>
+                               
+                           
+                           
+                           
+                           
+                           
+                           
+                      
+                    
+                      
+                           <li>
+                             <a href="http://hyperspy.org/hyperspy-doc/current/index.html" class="tab" target="_blank">Documentation</a>
+                           </li>
+                      
+                    
+                      
+                           <li>
+                             <a href="http://nbviewer.ipython.org/github/hyperspy/hyperspy-demos/tree/master/" class="tab" target="_blank">Demos</a>
+                           </li>
+                      
+                    
+                      
+                        
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                              
+                               <li>
+                                   <a href="/news/" class="tab">News</a>
+                               </li>
+                               
+                           
+                           
+                           
+                           
+                      
+                    
+                      
+                        
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                      
+                    
+                      
+                           <li>
+                             <a href="http://hyperspy.org/hyperspy-doc/current/citing.html" class="tab" target="_blank">Citing</a>
+                           </li>
+                      
+                    
+                      
+                           <li>
+                             <a href="https://github.com/hyperspy/hyperspy/graphs/contributors" class="tab" target="_blank">Credits</a>
+                           </li>
+                      
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </div>
+</nav>
+
+    <section>
+    <link href="css/gallery.css" rel="stylesheet">
+<link href="css/syntax.css" rel="stylesheet">
+<script src="https://unpkg.com/jupyter-js-widgets@1.1.2/dist/embed.js"></script>
+
+<section>
+  <div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Interactive Widgets</h2>
+                <p>Jupyter widgets enable interactive data visualization in the Jupyter notebooks.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-white top-section-border">
+    <div class="container">
+      <img class="section-icon img-responsive" src="assets/widget.svg" alt="icon to represent multiple notebooks">
+        <h3 class="col-sm-12 section-header">Notebook Widgets</h3>
+      <p class="support-paragraph">Notebooks come alive when interactive widgets are used. Users can visualize and control changes in the data. Learning becomes an immersive, plus fun, experience. Researchers can easily see how changing inputs to a model impact the results.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="tabbable tabs-left">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#ipyleaflet" data-toggle="tab">
+          <p>ipyleaflet</p>
+          <p>Geo-spatial analytics</p>
+          </a>
+        </li>
+        <li>
+          <a href="#bqplot" data-toggle="tab">
+            <p>bqplot</p>
+            <p>Interactive 2-D data visualization</p>
+          </a>
+        </li>
+        <li>
+          <a href="#pythreejs" data-toggle="tab">
+            <p>pythreejs</p>
+            <p>3-D data visualization</p>
+          </a>
+        </li>
+        <li>
+          <a href="#cookiecutter" data-toggle="tab">
+            <p>cookiecutter</p>
+            <p>Template widget project</p>
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="ipyleaflet">
+          <div class="jupyter-widget-header">
+            <span class="gallery-title">ipyleaflet</span>
+              <span>
+                <a href="http://mybinder.org/repo/ellisonbg/ipyleaflet/notebooks/examples">
+                <img class="img-scaling" src="assets/mybinder.svg" alt="Binder">
+                </a>
+                <a href="https://github.com/ellisonbg/ipyleaflet">
+                <img class="img-scaling" src="assets/github.svg" alt="GitHub">
+                </a>
+              </span>
+          </div>
+          <p>
+          A library for creating simple interactive maps with panning and
+          zooming. ipyleaflet supports annotations such as polygons,
+          markers, and more generally any geojson-encoded geographical
+          data structure.
+          </p>
+          <h3>Example</h3>
+          <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span>
+
+<span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="mf">34.6252978589571</span><span class="p">,</span> <span class="o">-</span><span class="mf">77.34580993652344</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span></code></pre></figure>
+          <script type="application/vnd.jupyter-embedded-widgets">
+              {
+    "9290476868954f9d89669683b5871646": {
+        "model_name": "LayoutModel",
+        "model_module": "jupyter-js-widgets",
+        "state": {
+            "height": "400px",
+            "align_self": "stretch"
+        },
+        "views": []
+    },
+    "500578170371428694bfd52b1d62292a": {
+        "model_name": "LeafletMapModel",
+        "model_module": "jupyter-leaflet",
+        "state": {
+            "height": "",
+            "layout": "IPY_MODEL_9290476868954f9d89669683b5871646",
+            "width": "",
+            "_south": 34.39897808891371,
+            "layers": [
+                "IPY_MODEL_6d93ea87be184226835cd2be5114c244"
+            ],
+            "_east": -76.79031372070311,
+            "_west": -77.90130615234375,
+            "_north": 34.85100201839405,
+            "center": [
+                34.6252978589571,
+                -77.34580993652344
+            ],
+            "zoom": 10,
+            "options": [
+                "keyboard_pan_offset",
+                "tap",
+                "attribution_control",
+                "max_zoom",
+                "min_zoom",
+                "bounce_at_zoom_limits",
+                "keyboard",
+                "scroll_wheel_zoom",
+                "dragging",
+                "inertia_max_speed",
+                "close_popup_on_click",
+                "zoom_control",
+                "box_zoom",
+                "double_click_zoom",
+                "tap_tolerance",
+                "zoom_start",
+                "keyboard_zoom_offset",
+                "inertia_deceleration",
+                "inertia",
+                "center",
+                "zoom",
+                "world_copy_jump",
+                "zoom_animation_threshold",
+                "touch_zoom"
+            ]
+        },
+        "views": [
+            {
+                "cell_index": 2
+            }
+        ]
+    },
+    "6d93ea87be184226835cd2be5114c244": {
+        "model_name": "LeafletTileLayerModel",
+        "model_module": "jupyter-leaflet",
+        "state": {
+            "options": [
+                "opacity",
+                "attribution",
+                "max_zoom",
+                "detect_retina",
+                "min_zoom",
+                "tile_size"
+            ]
+        },
+        "views": []
+    }
+}
+          </script>
+          <h3>Installation</h3>
+          With conda:
+          <figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda install -c conda-forge ipyleaflet</code></pre></figure>
+          With pip:
+          <figure class="highlight"><pre><code class="language-bash" data-lang="bash">pip install ipyleaflet
+          jupyter nbextension <span class="nb">enable</span> --py --sys-prefix ipyleaflet</code></pre></figure>
+        </div>
+        <div class="tab-pane" id="bqplot">
+          <div class="jupyter-widget-header">
+            <span class="gallery-title">bqplot</span>
+            <span>
+                <a href="http://mybinder.org/repo/bloomberg/bqplot/notebooks/examples">
+                <img class="img-scaling" src="assets/mybinder.svg" alt="Binder">
+                </a>
+                <a href="https://github.com/bloomberg/bqplot">
+                <img class="img-scaling" src="assets/github.svg" alt="GitHub">
+                </a>
+            </span>
+          </div>
+          <p>
+          A 2-D interative data visualization library implementing the
+          constructs of the grammar of graphics. bqplot provides a simple
+          API for creating custom user interactions.
+          </p>
+          <h3>Example</h3>
+          <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">bqplot.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="n">size</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'Scatter plot with colors'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">size</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">size</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">size</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></code></pre></figure>
+          <script type="application/vnd.jupyter-embedded-widgets">
+              {
+    "6c0d08134fc542489433c803a08a9d10": {
+        "model_name": "LinearScaleModel",
+        "model_module": "bqplot",
+        "state": {
+            "max": 1,
+            "min": 0
+        },
+        "views": []
+    },
+    "bd85bdff88e44d69803f32cda11a782e": {
+        "model_name": "LayoutModel",
+        "model_module": "jupyter-js-widgets",
+        "state": {},
+        "views": []
+    },
+    "d3bbcff29f1045ae96d3994eabbcef9e": {
+        "model_name": "LinearScaleModel",
+        "model_module": "bqplot",
+        "state": {
+            "max": 1,
+            "min": 0
+        },
+        "views": []
+    },
+    "1016e032f58c44529936346720390495": {
+        "model_name": "FigureModel",
+        "model_module": "bqplot",
+        "state": {
+            "title": "Scatter plot with colors",
+            "_dom_classes": [],
+            "layout": "IPY_MODEL_bd85bdff88e44d69803f32cda11a782e",
+            "marks": [
+                "IPY_MODEL_66834df833164c3895c37ab25ab6acc4"
+            ],
+            "scale_y": "IPY_MODEL_6c0d08134fc542489433c803a08a9d10",
+            "fig_margin": {
+                "left": 30,
+                "bottom": 80,
+                "right": 30,
+                "top": 60
+            },
+            "scale_x": "IPY_MODEL_d3bbcff29f1045ae96d3994eabbcef9e",
+            "axes": [
+                "IPY_MODEL_9d1494c9f4344a4580a7e8d13d5ec6a9",
+                "IPY_MODEL_aa2b1e76d6444471b058bb1652c99c86",
+                "IPY_MODEL_5ee518ab0a2f4fbea827a232ef2fa54e"
+            ]
+        },
+        "views": []
+    },
+    "244249277cb240bab5e5632d73e8bcf8": {
+        "model_name": "LinearScaleModel",
+        "model_module": "bqplot",
+        "state": {},
+        "views": []
+    },
+    "faa93c1a2e6f443fb62f8c2ccb313f6e": {
+        "model_name": "ColorScaleModel",
+        "model_module": "bqplot",
+        "state": {
+            "scheme": "RdYlGn",
+            "colors": [],
+            "scale_type": "linear",
+            "mid": null,
+            "_model_name": "ColorScaleModel",
+            "_view_name": "ColorScale"
+        },
+        "views": []
+    },
+    "dff66701a9994412bb56e0b824d5afef": {
+        "model_name": "LinearScaleModel",
+        "model_module": "bqplot",
+        "state": {},
+        "views": []
+    },
+    "66834df833164c3895c37ab25ab6acc4": {
+        "model_name": "ScatterModel",
+        "model_module": "bqplot",
+        "state": {
+            "color": {
+                "values": [
+                    -0.47677700625121083,
+                    0.48000883519757287,
+                    -1.6360627521935012,
+                    -0.8707304833425104,
+                    -0.45377905622003595,
+                    -1.9564284659436122,
+                    2.1617290947756973,
+                    -0.3475845786588708,
+                    -0.017974678384631286,
+                    0.48353493294713795,
+                    -1.398426023965913,
+                    -0.5041417477755866,
+                    -0.46992173760572425,
+                    0.40031375722788776,
+                    -0.8093338287325026,
+                    -2.2575139278795695,
+                    1.049296892965619,
+                    -0.6975639696860727,
+                    0.41008976718385204,
+                    0.2996978861501582,
+                    -0.7210598271704889,
+                    2.1219500976329106,
+                    -0.8667417063335451,
+                    -0.0549364009172896,
+                    -0.2557471345089962,
+                    0.05295597285222608,
+                    -1.2569930451204105,
+                    1.022513830264483,
+                    1.802685143825174,
+                    -1.1938941788544226,
+                    1.1972311688742856,
+                    0.5795773682935503,
+                    1.9824601094285614,
+                    -0.46598239206222836,
+                    0.5430297915298338,
+                    -0.21745688248653697,
+                    0.5615548104413339,
+                    -0.2583750832330989,
+                    0.08700529910388718,
+                    0.1381782681487771,
+                    1.000919822987257,
+                    -0.16479570244950775,
+                    0.958652293883979,
+                    0.8841256833131397,
+                    2.2676537741181564,
+                    -1.2364648369994669,
+                    0.7691642692936711,
+                    0.5008471375625769,
+                    0.3571803195057144,
+                    0.10127888333908679,
+                    -1.5293030067403823,
+                    -2.1684931143520396,
+                    0.28526334123911606,
+                    0.6771915920073017,
+                    0.09983775057019822,
+                    -0.015402128852149054,
+                    -1.5410273541027024,
+                    -0.7422246002674087,
+                    -0.49315209820866496,
+                    1.2252965098268094,
+                    1.1730480886077457,
+                    0.2569389890675275,
+                    0.7612678627535641,
+                    0.6880671030166093,
+                    -1.1727503433959168,
+                    1.2940726771193258,
+                    -0.919312195411289,
+                    -1.559145694275928,
+                    -0.9754980194017896,
+                    -0.6928302336510587,
+                    -0.13830180645574622,
+                    0.2877380006540295,
+                    -1.4127888284241226,
+                    -1.626915909120658,
+                    -0.43154950814553295,
+                    1.3133346361261045,
+                    -0.2369182594508295,
+                    0.6522387396000638,
+                    -0.3540716736593009,
+                    0.44875011240037943,
+                    0.42124822306773896,
+                    -0.2136780715211668,
+                    0.6483349959112891,
+                    1.5776274601208342,
+                    -1.1056974692663302,
+                    -0.26884170321683426,
+                    0.9057923588767889,
+                    0.6366421844982998,
+                    1.2326930140859698,
+                    -0.9705572622105872,
+                    1.7610130825270154,
+                    0.8091941501435008,
+                    -0.3399018171345084,
+                    -0.5962808995856621,
+                    0.9620874953832758,
+                    0.7445470616676053,
+                    -0.24219162522981683,
+                    -0.6970184128979111,
+                    1.5218675817910843,
+                    0.5185985624295505
+                ],
+                "type": "float64"
+            },
+            "default_colors": [
+                "DeepSkyBlue"
+            ],
+            "scales": {
+                "color": "IPY_MODEL_faa93c1a2e6f443fb62f8c2ccb313f6e",
+                "y": "IPY_MODEL_dff66701a9994412bb56e0b824d5afef",
+                "x": "IPY_MODEL_244249277cb240bab5e5632d73e8bcf8"
+            },
+            "opacity": {
+                "values": [],
+                "type": "float64"
+            },
+            "skew": {
+                "values": [],
+                "type": "float64"
+            },
+            "y": {
+                "values": [
+                    -0.8058133869075511,
+                    -1.6988750466744205,
+                    0.3647071622551892,
+                    -0.29946554738384396,
+                    -1.657612254482079,
+                    1.576527308402916,
+                    -0.587209206708686,
+                    -0.06967445151464649,
+                    -0.18091724432242906,
+                    0.36016226711901195,
+                    2.1149785148554736,
+                    -0.2578599145672497,
+                    1.1249597804549303,
+                    -0.25273509747171324,
+                    0.44388047572997225,
+                    -0.07513000187117272,
+                    -0.1609300181494648,
+                    -0.6889964109239131,
+                    -0.3100872592107003,
+                    -0.4984049581801121,
+                    -1.32763205710662,
+                    1.4069331600734625,
+                    -1.6453431698004113,
+                    -1.1453036700518553,
+                    -1.4796939313545834,
+                    1.928015944075271,
+                    1.692636891949781,
+                    1.8318557475905881,
+                    -0.38332254400790383,
+                    1.1251307538079465,
+                    -0.486350621410344,
+                    -0.2154893179784535,
+                    0.1208115876985876,
+                    0.8357671186333546,
+                    -1.4105432457789984,
+                    1.1239311221923818,
+                    0.07373451405150294,
+                    1.3143759797557946,
+                    -0.7415114012340599,
+                    -0.8563745905362168,
+                    -0.33478442684724347,
+                    -0.9364431080651974,
+                    0.8544995285800927,
+                    -0.11124759109000106,
+                    -0.6461147080112567,
+                    -1.570822732518327,
+                    -1.597742821613842,
+                    0.5774767505253496,
+                    0.2396661970138722,
+                    0.616655879196567,
+                    -0.9260763008563142,
+                    1.3371922876437365,
+                    1.503636220246262,
+                    -1.862559914720352,
+                    1.254730143632736,
+                    1.3840934246087344,
+                    1.192992741880326,
+                    -0.34857798581459515,
+                    0.7072735688268289,
+                    1.2646053178325205,
+                    0.06698344847682568,
+                    -0.057780953956394245,
+                    -0.6056055082871208,
+                    -0.6247673248340002,
+                    0.33086183364998917,
+                    1.5145756362029161,
+                    0.5974640222500369,
+                    -0.7447149893737798,
+                    -0.6414000471273031,
+                    1.2703723817292756,
+                    0.7797292103751775,
+                    1.7433436596876855,
+                    -1.1897560164055625,
+                    -0.18226993221736523,
+                    0.46781013531845017,
+                    -0.19581066496410968,
+                    0.6432272471250059,
+                    1.2101833599165341,
+                    -1.720721671731297,
+                    1.1452385227837076,
+                    -0.5819930421809357,
+                    1.144212481828279,
+                    -0.33084214233165815,
+                    1.2528244871609104,
+                    -0.030364336872783393,
+                    -0.7560060577543196,
+                    0.12539886364332936,
+                    1.2309381831682553,
+                    0.5723924759202714,
+                    1.3838519262019235,
+                    -1.096242260260709,
+                    -0.9098554386793261,
+                    -0.8080037154060974,
+                    -0.9666940130462974,
+                    2.211533999334559,
+                    0.6956254147962362,
+                    1.2496834357850848,
+                    -0.9274304805353834,
+                    -0.8099431859457277,
+                    0.07522266871256465
+                ],
+                "type": "float64"
+            },
+            "size": {
+                "values": [],
+                "type": "float64"
+            },
+            "names": {
+                "values": [],
+                "type": "float64"
+            },
+            "x": {
+                "values": [
+                    -1.1728733205343878,
+                    -1.7729534390147441,
+                    -0.5247105411759578,
+                    -1.4941997417163397,
+                    0.4618940383164644,
+                    -2.9601385246345955,
+                    0.5538858813970494,
+                    -0.8519533030659749,
+                    -0.05513365214280987,
+                    2.190994813445312,
+                    -0.46909032972695325,
+                    1.337301205386384,
+                    0.024620362356641334,
+                    1.7685728670890182,
+                    0.9570101533524081,
+                    -0.5449334224840354,
+                    0.2301719955977418,
+                    -0.33767502515663866,
+                    -0.05729485320459952,
+                    -0.6620564940536073,
+                    -1.8874245941458743,
+                    1.2784545821609468,
+                    -1.0792736641370413,
+                    0.15066252151738668,
+                    -1.4055747978963296,
+                    0.47290312125277656,
+                    -0.642585796422841,
+                    1.4543473948811896,
+                    -1.0272803830788761,
+                    -0.7476311051165031,
+                    -0.006263688710162847,
+                    -0.7726854785503009,
+                    -2.3070287112844285,
+                    -0.5164748978216595,
+                    1.0096158363862253,
+                    -0.9301487171313636,
+                    0.631473809953802,
+                    -0.9935462908030543,
+                    -1.7172143872610819,
+                    -0.7017316123064705,
+                    0.2852786475680209,
+                    1.956571552656593,
+                    -0.4174651879578481,
+                    -0.5636413089423317,
+                    0.3044986737508804,
+                    -1.0269250613904386,
+                    -0.2313183510372348,
+                    1.5241513770516784,
+                    -0.34142313469971214,
+                    0.07040380516963057,
+                    0.6870817699666542,
+                    0.5505358718985479,
+                    -0.073031675182521,
+                    -0.4060824512163987,
+                    0.43536445974678967,
+                    0.023509565437483143,
+                    -1.0056621903193943,
+                    0.09169760544179795,
+                    -0.35385366283861147,
+                    -0.8088101623339145,
+                    0.41274085588664267,
+                    1.399850019009027,
+                    1.8958879315702375,
+                    0.4946975234206462,
+                    -0.5034932870669634,
+                    0.3638256070642868,
+                    1.0922578123751678,
+                    1.2536401144374767,
+                    -0.19272353875669684,
+                    -0.397082474957518,
+                    1.0383638432108981,
+                    -1.5097542848504086,
+                    0.8882654419343163,
+                    0.5185022123865127,
+                    -0.7752663970819123,
+                    0.3557639699156444,
+                    1.6060980861176424,
+                    0.6133668493870996,
+                    -1.1865132309330857,
+                    -0.7046315153186381,
+                    -1.5753838868398238,
+                    -0.5638279008945848,
+                    2.840651912330099,
+                    1.8985264801224273,
+                    2.180144517831983,
+                    -0.4340073319478046,
+                    1.6392932965492926,
+                    1.4973545633561454,
+                    2.6870155477385502,
+                    1.2938560796262433,
+                    1.0600588601235155,
+                    -0.5013667990549738,
+                    -0.7552237210680028,
+                    -1.2611800572241483,
+                    -0.5912342483209048,
+                    0.6046796791891621,
+                    1.0602423509656127,
+                    -0.3225529622049402,
+                    -0.13887408798830062,
+                    -1.653260903119789
+                ],
+                "type": "float64"
+            },
+            "display_legend": false,
+            "selected": null,
+            "rotation": {
+                "values": [],
+                "type": "float64"
+            }
+        },
+        "views": []
+    },
+    "9d1494c9f4344a4580a7e8d13d5ec6a9": {
+        "model_name": "AxisModel",
+        "model_module": "bqplot",
+        "state": {
+            "tick_values": {
+                "values": [],
+                "type": "float64"
+            },
+            "scale": "IPY_MODEL_244249277cb240bab5e5632d73e8bcf8",
+            "side": "bottom"
+        },
+        "views": []
+    },
+    "aa2b1e76d6444471b058bb1652c99c86": {
+        "model_name": "ColorAxisModel",
+        "model_module": "bqplot",
+        "state": {
+            "tick_values": {
+                "values": [],
+                "type": "float64"
+            },
+            "scale": "IPY_MODEL_faa93c1a2e6f443fb62f8c2ccb313f6e",
+            "side": "bottom"
+        },
+        "views": []
+    },
+    "5ee518ab0a2f4fbea827a232ef2fa54e": {
+        "model_name": "AxisModel",
+        "model_module": "bqplot",
+        "state": {
+            "tick_values": {
+                "values": [],
+                "type": "float64"
+            },
+            "scale": "IPY_MODEL_dff66701a9994412bb56e0b824d5afef",
+            "orientation": "vertical",
+            "side": "left"
+        },
+        "views": []
+    },
+    "d7aba638e1a64780bb028014e64235cf": {
+        "model_name": "LayoutModel",
+        "model_module": "jupyter-js-widgets",
+        "state": {},
+        "views": []
+    },
+    "9ee973fb02f94d1093b4825e98aa06b7": {
+        "model_name": "ToolbarModel",
+        "model_module": "bqplot",
+        "state": {
+            "figure": "IPY_MODEL_1016e032f58c44529936346720390495",
+            "layout": "IPY_MODEL_d7aba638e1a64780bb028014e64235cf"
+        },
+        "views": []
+    },
+    "ab3ef7b594f8428599c5157b8b098a55": {
+        "model_name": "LayoutModel",
+        "model_module": "jupyter-js-widgets",
+        "state": {
+            "display": "flex",
+            "align_items": "stretch",
+            "flex_flow": "column"
+        },
+        "views": []
+    },
+    "3eade8e9f5f749d98ac8cdc4f600fae8": {
+        "model_name": "BoxModel",
+        "model_module": "jupyter-js-widgets",
+        "state": {
+            "layout": "IPY_MODEL_ab3ef7b594f8428599c5157b8b098a55",
+            "children": [
+                "IPY_MODEL_1016e032f58c44529936346720390495",
+                "IPY_MODEL_9ee973fb02f94d1093b4825e98aa06b7"
+            ]
+        },
+        "views": [
+            {
+                "cell_index": 0
+            }
+        ]
+    }
+}
+          </script>
+          <h3>Installation</h3>
+          With conda:
+          <figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda install -c conda-forge bqplot</code></pre></figure>
+          With pip:
+          <figure class="highlight"><pre><code class="language-bash" data-lang="bash">pip install bqplot
+          jupyter nbextension <span class="nb">enable</span> --py --sys-prefix bqplot</code></pre></figure>
+        </div>
+        <div class="tab-pane" id="pythreejs">
+          <div class="jupyter-widget-header">
+            <span class="gallery-title">pythreejs</span>
+            <span>
+              <a href="http://mybinder.org/repo/jovyan/pythreejs/notebooks/examples">
+              <img class="img-scaling" src="assets/mybinder.svg" alt="Binder">
+              </a>
+              <a href="https://github.com/jovyan/pythreejs">
+              <img class="img-scaling" src="assets/github.svg" alt="GitHub">
+              </a>
+            </span>
+          </div>
+          <p>
+          A 3-D visualization library enabling GPU-accelerated computer
+          graphics in Jupyter.
+          </p>
+          <h3>Example</h3>
+          <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">pythreejs</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="s">"""
+function f(origu,origv) {
+    // scale u and v to the ranges I want: [0, 2*pi]
+    var u = 2*Math.PI*origu;
+    var v = 2*Math.PI*origv;
+    
+    var x = Math.sin(u);
+    var y = Math.cos(v);
+    var z = Math.cos(u+v);
+    
+    return new THREE.Vector3(x,y,z)
+}
+"""</span>
+
+<span class="n">surf_g</span> <span class="o">=</span> <span class="n">ParametricGeometry</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">f</span><span class="p">);</span>
+<span class="n">surf</span> <span class="o">=</span> <span class="n">Mesh</span><span class="p">(</span><span class="n">geometry</span><span class="o">=</span><span class="n">surf_g</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="n">LambertMaterial</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s">'green'</span><span class="p">,</span> <span class="n">side</span><span class="o">=</span><span class="s">'FrontSide'</span><span class="p">))</span>
+<span class="n">surf2</span> <span class="o">=</span> <span class="n">Mesh</span><span class="p">(</span><span class="n">geometry</span><span class="o">=</span><span class="n">surf_g</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="n">LambertMaterial</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s">'yellow'</span><span class="p">,</span> <span class="n">side</span><span class="o">=</span><span class="s">'BackSide'</span><span class="p">))</span>
+<span class="n">scene</span> <span class="o">=</span> <span class="n">Scene</span><span class="p">(</span><span class="n">children</span><span class="o">=</span><span class="p">[</span><span class="n">surf</span><span class="p">,</span> <span class="n">surf2</span><span class="p">,</span> <span class="n">AmbientLight</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s">'#777777'</span><span class="p">)])</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">PerspectiveCamera</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">],</span> <span class="n">up</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+                      <span class="n">children</span><span class="o">=</span><span class="p">[</span><span class="n">DirectionalLight</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s">'white'</span><span class="p">,</span>
+                                                 <span class="n">position</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+                                                 <span class="n">intensity</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)])</span>
+<span class="n">Renderer</span><span class="p">(</span><span class="n">camera</span><span class="o">=</span><span class="n">c</span><span class="p">,</span> <span class="n">scene</span><span class="o">=</span><span class="n">scene</span><span class="p">,</span> <span class="n">controls</span><span class="o">=</span><span class="p">[</span><span class="n">OrbitControls</span><span class="p">(</span><span class="n">controlling</span><span class="o">=</span><span class="n">c</span><span class="p">)])</span></code></pre></figure>
+          <script type="application/vnd.jupyter-embedded-widgets">
+              {
+    "8065dd7a1c6a4bf4ab2e38a9ac7bfb88": {
+        "model_name": "ParametricGeometryModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "func": "\nfunction f(origu,origv) {\n    // scale u and v to the ranges I want: [0, 2*pi]\n    var u = 2*Math.PI*origu;\n    var v = 2*Math.PI*origv;\n    \n    var x = Math.sin(u);\n    var y = Math.cos(v);\n    var z = Math.cos(u+v);\n    \n    return new THREE.Vector3(x,y,z)\n}\n"
+        },
+        "views": []
+    },
+    "2deba3bdbd9746ac9cc7e2bbb13f140d": {
+        "model_name": "LambertMaterialModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "color": "green",
+            "side": "FrontSide"
+        },
+        "views": []
+    },
+    "677461e24d0c47729e697d6006071151": {
+        "model_name": "MeshModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "visible": true,
+            "geometry": "IPY_MODEL_8065dd7a1c6a4bf4ab2e38a9ac7bfb88",
+            "quaternion": [],
+            "children": [],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "up": [
+                0,
+                1,
+                0
+            ],
+            "receiveShadow": false,
+            "material": "IPY_MODEL_2deba3bdbd9746ac9cc7e2bbb13f140d",
+            "castShadow": false
+        },
+        "views": []
+    },
+    "53b39429ad794acc96370cba0f647aa7": {
+        "model_name": "LambertMaterialModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "color": "yellow",
+            "side": "BackSide"
+        },
+        "views": []
+    },
+    "7adc6022ffd849779ab5630d1e2904ce": {
+        "model_name": "MeshModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "visible": true,
+            "geometry": "IPY_MODEL_8065dd7a1c6a4bf4ab2e38a9ac7bfb88",
+            "quaternion": [],
+            "children": [],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "up": [
+                0,
+                1,
+                0
+            ],
+            "receiveShadow": false,
+            "material": "IPY_MODEL_53b39429ad794acc96370cba0f647aa7",
+            "castShadow": false
+        },
+        "views": []
+    },
+    "e12cb8c4009d4dd2a51b011ba7656343": {
+        "model_name": "AmbientLightModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "visible": true,
+            "quaternion": [],
+            "children": [],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "up": [
+                0,
+                1,
+                0
+            ],
+            "receiveShadow": false,
+            "color": "#777777",
+            "castShadow": false
+        },
+        "views": []
+    },
+    "5963e7effe3345a492065d84ed0a48d9": {
+        "model_name": "SceneModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "visible": true,
+            "quaternion": [],
+            "children": [
+                "IPY_MODEL_677461e24d0c47729e697d6006071151",
+                "IPY_MODEL_7adc6022ffd849779ab5630d1e2904ce",
+                "IPY_MODEL_e12cb8c4009d4dd2a51b011ba7656343"
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "up": [
+                0,
+                1,
+                0
+            ],
+            "receiveShadow": false,
+            "castShadow": false
+        },
+        "views": []
+    },
+    "9ab31392ae0b4ef48368ac0a9ba74650": {
+        "model_name": "DirectionalLightModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "visible": true,
+            "quaternion": [],
+            "intensity": 0.6,
+            "children": [],
+            "position": [
+                3,
+                5,
+                1
+            ],
+            "up": [
+                0,
+                1,
+                0
+            ],
+            "receiveShadow": false,
+            "castShadow": false
+        },
+        "views": []
+    },
+    "350cb8bd6cb64d6a854a08b38dc2253c": {
+        "model_name": "PerspectiveCameraModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "visible": true,
+            "receiveShadow": false,
+            "children": [
+                "IPY_MODEL_9ab31392ae0b4ef48368ac0a9ba74650"
+            ],
+            "position": [
+                2.5,
+                2.5,
+                2.5
+            ],
+            "up": [
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "quaternion": [],
+            "castShadow": false
+        },
+        "views": []
+    },
+    "34852749f4b743da8971250ff153c75f": {
+        "model_name": "OrbitControlsModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "controlling": "IPY_MODEL_350cb8bd6cb64d6a854a08b38dc2253c"
+        },
+        "views": []
+    },
+    "711f6fea498e4556a3d85216e478f61f": {
+        "model_name": "LayoutModel",
+        "model_module": "jupyter-js-widgets",
+        "state": {},
+        "views": []
+    },
+    "5fa73cf3542d45bab0684cc42e18d0cb": {
+        "model_name": "RendererModel",
+        "model_module": "jupyter-threejs",
+        "state": {
+            "camera": "IPY_MODEL_350cb8bd6cb64d6a854a08b38dc2253c",
+            "height": "400",
+            "controls": [
+                "IPY_MODEL_34852749f4b743da8971250ff153c75f"
+            ],
+            "scene": "IPY_MODEL_5963e7effe3345a492065d84ed0a48d9",
+            "layout": "IPY_MODEL_711f6fea498e4556a3d85216e478f61f",
+            "width": "600"
+        },
+        "views": [
+            {
+                "cell_index": 15
+            }
+        ]
+    }
+}
+
+          </script>
+          <h3>Installation</h3>
+          With conda:
+          <figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda install -c conda-forge pythreejs</code></pre></figure>
+          With pip:
+          <figure class="highlight"><pre><code class="language-bash" data-lang="bash">pip install pythreejs
+          jupyter nbextension <span class="nb">enable</span> --py --sys-prefix pythreejs</code></pre></figure>
+        </div>
+        <div class="tab-pane" id="cookiecutter">
+          <div class="jupyter-widget-header">
+            <span class="gallery-title">widget cookiecutter</span>
+            <span>
+              <a href="https://github.com/jupyter/widget-cookiecutter">
+              <img class="img-scaling" src="assets/github.svg" alt="GitHub">
+              </a>
+            </span>
+          </div>
+          <p>
+          The Jupyter widget framework is extensible and enables developers to create custom
+          widget libraries and bindings for visualization libraries of the JavaScript ecosystem.
+          </p>
+          <p>
+          The <code>cookiecutter</code> project helps widget authors get up to speed with the
+          packaging and distribution of Jupyter interactive widgets.
+          </p>
+          <p>
+          It produces a base project for a Jupyter interactive widget library following the current best practices.
+          An implementation for a placeholder "Hello World" widget is provided. Following these practices will
+          help make your custom widgets work in static web pages (like the examples of this page) and be compatible
+          with future versions of Jupyter.
+          </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    <footer>
+    <div class="footer" role="navigation">
+        <div class="container">
+            <div class="navbar-text">
+                <ul class="footer-text">
+                    <li><a href="/index.html">Home</a></li>
+                    
+                      
+                        
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                               <li><a href="/install.html">Install</a></li>
+                           
+                           
+                           
+                           
+                           
+                           
+                      
+                    
+                      
+                           <li><a href="http://hyperspy.org/hyperspy-doc/current/index.html" target="_blank">Documentation</a></li>
+                      
+                    
+                      
+                           <li><a href="http://nbviewer.ipython.org/github/hyperspy/hyperspy-demos/tree/master/" target="_blank">Demos</a></li>
+                      
+                    
+                      
+                        
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                               <li><a href="/news/">News</a></li>
+                           
+                           
+                           
+                           
+                      
+                    
+                      
+                        
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                      
+                    
+                      
+                           <li><a href="http://hyperspy.org/hyperspy-doc/current/citing.html" target="_blank">Citing</a></li>
+                      
+                    
+                      
+                           <li><a href="https://github.com/hyperspy/hyperspy/graphs/contributors" target="_blank">Credits</a></li>
+                      
+                    
+                    <p>Copyright © 2017  Project Jupyter - Last updated Wed, Feb 15, 2017</p>
+                    <!--2017-02-15 11:23:11 +0000-->
+                </ul>
+            </div>
+            <div class="follow">
+                <a class="github-button" href="https://github.com/jupyter" aria-label="Follow @jupyter on GitHub">Follow @jupyter</a>
+                <br><a href="https://twitter.com/ProjectJupyter" class="twitter-follow-button" data-show-count="false">Follow @ProjectJupyter</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Place this tag right after the last button or just before your close body tag. -->
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    <script src="/js/scroll.js"></script>
+    <script src="/js/architecture.js"></script>
+    <script src="/js/simon.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+  </body>
+
+</html>
