@@ -1,90 +1,51 @@
-# Jupyter's main website
+# This is the _final_ motherfucking website.
 
-[![Build Status](https://travis-ci.org/jupyter/jupyter.github.io.svg?branch=master)](https://travis-ci.org/jupyter/jupyter.github.io)
+And it's _really_ more fucking perfect than the last guy's.
 
-This is the source to [Jupyter.org](http://jupyter.org/).
+## Seriously, some minimal fucking things are needed to make this shit perfect.
 
-# Build instruction. 
+**Ten fucking declarations, an `@media` block, and one attribute.**
 
-The site is build using GitHub Pages Jekyll, see [Jekyll
-website](http://jekyllrb.com/) for customizing build process, and detail on how
-what where. 
+That's how much CSS and HTML it took to turn that [grotesque pile of shit](http://motherfuckingwebsite.com/) into this finally perfect masterpiece. It's so fucking simple and it still has all the glory of the original perfect-ass website:
 
-# Quick local testing
+* Shit's _finally_ lightweight and loads fast;
+* _Finally_ fits on all your shitty screens;
+* _Finally_ looks the same in all your shitty browsers;
+* _Won't_ bleach your fucking eyeballs at night if your browser thinks you like dark things;
+* The motherfucker's _still_ accessible to every asshole that visits your site;
+* Shit's _still_ legible and gets your fucking point across.
 
-```
-$ gem install jekyll kramdown github-pages
-```
+### And guess what, motherfucker:
 
-cd into the root of this directory, 
+You never knew it, but it's easy to improve reliability on your site. Here's how.
 
-```
-jekyll serve --baseurl ''
-```
+## A little more accessibility
 
-Open your browser to localhost:4000
+I know you love marginalization, but you should take care of people.
+The <abbr title="HyperText Markup Language">HTML</abbr> tag doesn't include the [`lang` attribute](https://www.w3.org/TR/html5/dom.html#the-lang-and-xml:lang-attributes) in your shitty webpage.  
+You ever listen to a [wrong language screen reader lecture](https://www.youtube.com/watch?v=NP94u7y_KkQ)? What a shitty experience.
 
-Edit the various part and reload at will. 
+## Typography matters
 
-Enjoy
+[Don't be dumb with typography](http://smartquotesforsmartpeople.com/). Don't let improper marks and quotes make their way onto websites because of dumb defaults in applications and CMSs.  
+And did you let the browser choose the font? Don't make me read such text with _Times New Roman_.
 
-# What is where. 
+## License, motherfucker
 
-Most pages are located at the place where their URL is, nothing fancy.  Headers
-and footer are in `_includes/head.html`, `_includes/header.html` ,
-`_includes/footer.html`.
+Do you revendicate intellectual property? No. So you must [choose a fucking public license](https://choosealicense.com/).  
+And as you'll never be perfect, let others [improve your shit](https://github.com/LeoColomb/perfectmotherfuckingwebsite) or [do what the f\*ck they want to](https://github.com/LeoColomb/perfectmotherfuckingwebsite/blob/master/LICENSE).
 
-The **navbar** is in `_data/nav.yml` and look like that:
+## Yes, this is the last fucking satire, you fuck
 
-```
-head:
-    - Home
-    - title: Install
-      url: https://jupyter.readthedocs.io/en/latest/install.html
-    - About
-    - title: Documentation
-      url: https://jupyter.readthedocs.io/en/latest/install.html
-    - title: Blog
-      url: https://blog.jupyter.org
-    - Donate
-```
+I'm impressed about what the creator of [this site's inspiration did](http://bettermotherfuckingwebsite.com/). What I'm saying is that it's so, so simple to make sites easier to read. Websites are broken by default—they are functional, high-performing, and accessible, but they're also fucking ugly. You and all the other web designers out there need to make them not total shit.
 
-which mean, insert in order the following links into the navbar:
+> "Don't ignore stupid things or you will stay at the motherfucker level." 
+> — Brad Hollande
 
-    - Link to `Home` page, guess the url by yourself. 
-    - link to `Install` page, the url is...
-    - Link to `About`, guess the url by yourself, 
-    -  ... etc.
-
-The navbar will automatically target `_blank` pages where the url is explicit,
-and mark the correct link as the "current" one.
-
-# How do I create a new page ?
-
-Create `my_page.html` (will have url `https://jupyter.org/my_page.html`)
-or `my_page/index.html` (will have url `https://jupyter.org/my_page/`), start with the following :
-
-```
----
-layout: default
-title: My Page
-navbar_gray: true
 ---
 
-write some html here (consider you are already inside `<body></body>`
-```
+## Epilogue
 
-You can not do it yet with .md file, but you will be able soon.
+Inspired by the geniuses behind [motherfuckingwebsite.com](https://motherfuckingwebsite.com/) and [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/).
 
-Add commit (and don't forget to add to `_data/nav.yml`
-
-`navbar_gray: true` start the navbar with a grey background if you need it. 
-
-# Continuous Integration Testing on Travis
-
-Travis will run and test:
-
-- jekyll build
-- html-proofer
-- csslint
-
+This page—that isn't a total fucking content—was licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
