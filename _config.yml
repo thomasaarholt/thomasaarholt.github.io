@@ -41,3 +41,15 @@ defaults:
       type: post
     values:
       tags: Other
+
+comments:
+  giscus:
+    enabled: true
+    repo: "thomasaarholt/thomasaarholt.github.io"
+    repo_id: "MDEwOlJlcG9zaXRvcnk4MTgxOTAyOQ=="
+    category: "Announcements"
+    category_id: "DIC_kwDOBOB1lc4CZmqw"
+    mapping: "pathname"
+    reactions_enabled: "1"
+    theme: "preferred_color_scheme"
+
