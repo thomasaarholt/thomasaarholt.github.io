@@ -1,5 +1,10 @@
-## Blog Post Title From First Header
+## Test first post
 
+The following is from a template based on the following two how-to's
+- https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html
+- https://bartoszgorka.com/github-discussion-comments-for-jekyll-blog
+
+### this stuff is from the template example post
 Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
 
 If the file does not start with a header, then the post title will be derived from the filename.
@@ -30,3 +35,19 @@ ForEach ($thing in $things) {
     Write-Output "It highlights it using the GitHub style"
 }
 ```
+
+<script src="https://giscus.app/client.js"
+    data-repo="thomasaarholt/thomasaarholt.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnk4MTgxOTAyOQ=="
+    data-category="Announcements"
+    data-category-id="DIC_kwDOBOB1lc4CZmqw"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+</script>
