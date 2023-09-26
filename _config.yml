@@ -19,8 +19,8 @@ linkedin_username: "thomasaarholt"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
+# remote-theme: "pages-themes/hacker@v0.2.0"
 theme: "minima"
-
 rss: rss
 
 kramdown:
@@ -30,6 +30,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  # - jekyll-remote-theme
 
 titles_from_headings:
   strip_title: true
@@ -51,5 +52,5 @@ comments:
     category_id: "DIC_kwDOBOB1lc4CZmqw"
     mapping: "pathname"
     reactions_enabled: "1"
-    theme: "preferred_color_scheme"
+    theme: "minima"
 
