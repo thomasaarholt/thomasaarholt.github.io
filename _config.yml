@@ -24,13 +24,13 @@ theme: "minima"
 rss: rss
 
 kramdown:
-  syntax_highlighter_opts:
-    disable: true
+  syntax_highlighter: tree-sitter
+
     
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  # - jekyll-remote-theme
+  - kramdown/syntax_tree_sitter
 
 titles_from_headings:
   strip_title: true
@@ -39,7 +39,7 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other
 
