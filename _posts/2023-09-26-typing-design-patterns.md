@@ -19,7 +19,7 @@ FooDF: TypeAlias = pl.DataFrame
 BarDF: TypeAlias = pl.DataFrame
 
 def get_data() -> tuple[FooDF, BarDF]:
-    df_foo = pl.DataFrame()
+    df_foo = pl.DataFrame()
     df_bar = pl.DataFrame()
     return df_foo, df_bar
 
